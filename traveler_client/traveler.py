@@ -11,5 +11,5 @@ class Traveler:
             return title
         return datetime.datetime.now()
 
-    def create(self, form_id, user_id, title=None, devices=[]):
+    def create(self, form_id, user_id, title=None, devices=None):
         return self.client.request('post', '/apis/create/traveler/', json={'formId': form_id, 'userName': user_id, 'title': self.__gen_title(title), 'devices': devices })
