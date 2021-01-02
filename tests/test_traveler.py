@@ -21,4 +21,4 @@ def test_create(traveler_fixture, state_fixture):
     traveler_response_json = traveler_response.json()
     logging.info(traveler_response_json)
     state_fixture['traveler_id'] = traveler_response_json['_id']
-    assert state_fixture['_id']
+    assert state_fixture['traveler_id']
