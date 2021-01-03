@@ -1,0 +1,36 @@
+{
+  "tags": [],
+  "status": 1,
+  "formType": "normal",
+  "discrepancy": null,
+  "_v": 0,
+  "__updates": [],
+  "_id": "5ff0abd8de8f2600ef9eda2d",
+  "title": "python client types",
+  "base": {
+    "formType": "normal",
+    "_id": "5ff0aa85de8f2600ef9eda29",
+    "_v": 0,
+    "html": "<div class=\"control-group-wrap\"><span class=\"fe-type\">text</span><div class=\"control-group output-control-group\"><div class=\"control-label\"><span class=\"control-number\">0.0.1</span> <span class=\"model-label\">text</span></div><div class=\"controls\"><input type=\"text\" disabled=\"disabled\" placeholder data-userkey=\"text\" name=\"2e6e2b06\" /><span class=\"help-block\"></span></div></div></div><div class=\"control-group-wrap\"><span class=\"fe-type\">number</span><div class=\"control-group output-control-group\"><div class=\"control-label\"><span class=\"control-number\">0.0.2</span> <span class=\"model-label\">number</span></div><div class=\"controls\"><input type=\"number\" disabled=\"disabled\" placeholder data-userkey=\"number\" name=\"4eece9de\" /><span class=\"help-block\"></span></div></div></div><div class=\"control-group-wrap\"><span class=\"fe-type\">checkbox</span><div class=\"control-group output-control-group\"><div class=\"control-label\"><span class=\"control-number\">0.0.3</span> <span class=\"model-label\">boolean</span></div><div class=\"controls\"><label class=\"checkbox\"><input type=\"checkbox\" disabled=\"disabled\" data-userkey=\"boolean\" name=\"cf5db831\" /><span>success</span></label></div></div></div>",
+    "mapping": {
+      "text": "2e6e2b06",
+      "number": "4eece9de",
+      "boolean": "cf5db831"
+    },
+    "labels": {
+      "2e6e2b06": "text",
+      "4eece9de": "number",
+      "cf5db831": "boolean"
+    },
+    "types": {
+      "2e6e2b06": "text",
+      "4eece9de": "number",
+      "cf5db831": "checkbox"
+    },
+    "__v": 1
+  },
+  "ver": "0",
+  "releasedBy": "dong",
+  "releasedOn": "2021-01-02T17:22:32.189Z",
+  "__v": 0
+}

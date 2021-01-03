@@ -37,3 +37,20 @@ def test_update_status(traveler_fixture, state_fixture):
        assert client.Client.is_json(traveler_response)
        traveler_response_json = traveler_response.json()
        assert traveler_response_json['status'] == status
+
+def test_insert_date(traveler_fixture, state_fixture):
+    name = state_fixture['traveler_mapping']['text']
+    value = 'python test'
+    input_type = state_fixture['traveler_types'][name]
+    data_response = traveler_fixture.insert_data(state_fixture['traveler_id'], name, value, input_type, 'dong')
+    assert data_response.ok
+    name = state_fixture['traveler_mapping']['number']
+    value = 5
+    input_type = state_fixture['traveler_types'][name]
+    data_response = traveler_fixture.insert_data(state_fixture['traveler_id'], name, value, input_type, 'dong')
+    assert data_response.ok
+    name = state_fixture['traveler_mapping']['boolean']
+    value = True
+    input_type = state_fixture['traveler_types'][name]
+    data_response = traveler_fixture.insert_data(state_fixture['traveler_id'], name, value, input_type, 'dong')
+    assert data_response.ok

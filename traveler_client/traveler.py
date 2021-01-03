@@ -11,8 +11,11 @@ class Traveler:
             return title
         return datetime.datetime.now()
 
-    def create(self, form_id, user_id, title=None, devices=None):
+    def create(self, form_id, user_id='api', title=None, devices=None):
         return self.client.request('post', '/apis/create/traveler/', json={'formId': form_id, 'userName': user_id, 'title': self.__gen_title(title), 'devices': devices })
 
-    def update_status(self, traveler_id, status, user_id):
-        return self.client.request('put', f'/apis/travelers/{traveler_id}/status/', json={'status': status, 'userName': user_id})
+    def update_status(self, traveler_id, status, user_id='api'):
+        return self.client.request('put', f'/apis/travelers/{traveler_id}/status/', json={'status': status, 'userId': user_id})
+
+    def insert_data(self, traveler_id, name, value, input_type, user_id='api'):
+        return self.client.request('post', f'/apis/travelers/{traveler_id}/data/', json={'name': name, 'value': value, 'type': input_type, 'userId': user_id})
