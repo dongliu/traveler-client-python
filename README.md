@@ -12,10 +12,11 @@ perform the following interactions:
 
 The tests shows how to perform these interactions. The `tests/test_traveler.py`
 test shows the flow of create a new traveler and update it from a released form,
-which can be added into a local environment from the file
-`tests/5ff0abd8de8f2600ef9eda2d.json`. The form contains three inputs of basic
-types: text, number, and boolean. It shows how to insert data into a traveler
-using the `keys` defined by the user when creating the form.
+which can be added into a local environment in the collection `releasedforms`
+with the content of `tests/5ff0abd8de8f2600ef9eda2d.bson`. The form contains
+three inputs of basic types: text, number, and boolean. It shows how to insert
+data into a traveler using the `keys` defined by the user when creating the
+form.
 
 ## project configuration
 
