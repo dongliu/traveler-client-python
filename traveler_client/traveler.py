@@ -1,4 +1,4 @@
-import datetime
+from datetime import datetime
 from .client import Client
 
 
@@ -9,7 +9,7 @@ class Traveler:
     def __gen_title(self, title):
         if title:
             return title
-        return datetime.datetime.now()
+        return str(datetime.now())
 
     def create(self, form_id, user_id='api', title=None, devices=None):
         return self.client.request('post', '/apis/create/traveler/', json={'formId': form_id, 'userName': user_id, 'title': self.__gen_title(title), 'devices': devices })
