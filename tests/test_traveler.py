@@ -6,7 +6,7 @@ from traveler_client import client, traveler
 @pytest.fixture(scope='module')
 def traveler_fixture():
     from traveler_client import traveler
-    return traveler.Traveler('https://localhost:3443', 'api_write', 'api_write_password')
+    return traveler.Traveler('http://localhost:3002', 'api_write', 'api_write_password')
 
 
 @pytest.fixture(scope='module')
